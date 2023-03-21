@@ -10,11 +10,11 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Kristine: Software Engineer</title>
+        <title>Kristine/Software Developer</title>
         <meta name="description" content="A portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/dango_icon.svg" />
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
+      <main className="flex h-screen w-screen flex-col items-center justify-center bg-black ">
         
       </main>
     </>

@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "TrapBlack";
+  src: url("../../assets/TrapFont/OpenType-PS/Trap-Black.otf");
+}
+
+@font-face {
+  font-family: "TrapBold";
+  src: url("../../assets/TrapFont/OpenType-PS/Trap-Bold.otf");
+}
+
+@font-face {
+  font-family: "TrapLight";
+  src: url("../../assets/TrapFont/OpenType-PS/Trap-Light.otf");
+}
+
+@font-face {
+  font-family: "TrapMedium";
+  src: url("../../assets/TrapFont/OpenType-PS/Trap-Medium.otf");
+}
+
+@font-face {
+  font-family: "TrapRegular";
+  src: url("../../assets/TrapFont/OpenType-PS/Trap-Regular.otf");
+}
+
+@font-face {
+  font-family: "TrapSemibold";
+  src: url("../../assets/TrapFont/OpenType-PS/Trap-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "AmsterdamScript";
+  src: url("../../assets/AmsterdamScript.otf");
+}
+
+@font-face {
+  font-family: "MarseilleRegular";
+  src: url("../../assets/marseille-regular.otf");
+}
+
+@font-face {
+  font-family: "NeutralFaceBold";
+  src: url("../../assets/NeutralFace-Bold.otf");
+}
+
+@font-face {
+  font-family: "NeutralFaceRegular";
+  src: url("../../assets/NeutralFace.otf");
+}
+
+@font-face {
+    font-family: "Krylon";
+    src: url("../../assets/KRYLON_030222/Krylon-Regular.otf");
+  }

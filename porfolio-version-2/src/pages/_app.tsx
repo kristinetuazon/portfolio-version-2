@@ -55,7 +55,7 @@ import { api } from "~/utils/api";
 import "~/styles/globals.css";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
-  return <main className={`${Trap.variable} font-sans`}><Component {...pageProps} /></main>
+  return <main className={`${Trap.variable} ${AmsterdamScript.variable} ${MarseilleRegular.variable} ${NeutralFace} font-sans`}><Component {...pageProps} /></main>
 };
 
 export default api.withTRPC(MyApp);

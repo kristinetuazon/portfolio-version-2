@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       </Head>
       <Format>
         <div className="m-5">
-          <p className="text-left font-headingBold text-6xl tracking-wide text-charcoal">
+          <p className="text-left font-heading text-6xl tracking-wide text-charcoal">
             hello, my name is
           </p>
           <br />
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
           </h1>
           <br />
           <br />
-          <h1 className="text-right font-bodyMedium text-5xl text-charcoal">
+          <h1 className="text-right font-body text-5xl text-charcoal">
             and I'm a software engineer based in Tokyo, Japan.
           </h1>
         </div>

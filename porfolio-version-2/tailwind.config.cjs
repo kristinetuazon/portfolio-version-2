@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 const config = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -26,18 +27,23 @@ const config = {
       neutral8: "#9d7f61",
     },
     fontFamily: {
-      title: ['Krylon','serif'],
-      title2:['AmsterdamScript', 'serif'],
-      heading: ['NeutralFaceRegular', 'serif'],
-      headingBold: ['NeutralFaceBold', 'serif'],
-      heading2:['MarseilleRegular', 'serif'],
-      bodyMedium: ['TrapMedium', 'serif'],
-      bodyLight: ['TrapLight', 'serif'],
-      bodyRegular: ['TrapRegular', 'serif'],
-      bodyThin: ['Petrona_Thin', 'serif'],
-      bodyBold: ['TrapBold', 'serif'],
-      bodyBlack: ['TrapBlack', 'serif'],
-      bodySemibold: ['TrapBlack', 'serif'],
+      title: ['var(--font-krylon)'],
+      title2: ['var(--font-amsterdam)'],
+      heading: ['var(--font-neutralface)'],
+      body: ['var(--font-trap)']
+
+      // title: ['Krylon','serif'],
+      // title2:['AmsterdamScript', 'serif'],
+      // heading: ['NeutralFaceRegular', 'serif'],
+      // headingBold:['NeutralFaceBold', 'serif'],
+      // heading2:['MarseilleRegular', 'serif'],
+      // bodyMedium: ['TrapMedium', 'serif'],
+      // bodyLight: ['TrapLight', 'serif'],
+      // bodyRegular: ['TrapRegular', 'serif'],
+      // bodyThin: ['Petrona_Thin', 'serif'],
+      // bodyBold: ['TrapBold', 'serif'],
+      // bodyBlack: ['TrapBlack', 'serif'],
+      // bodySemibold: ['TrapBlack', 'serif'],
     },
   },
   plugins: [],

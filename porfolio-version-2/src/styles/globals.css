@@ -5,7 +5,7 @@
 body {
   background-color: #f8f8f8
 }
-@font-face {
+/* @font-face {
   font-family: "TrapBlack";
   src: url("../../assets/TrapFont/OpenType-PS/Trap-Black.otf");
 }
@@ -58,4 +58,4 @@ body {
 @font-face {
     font-family: "Krylon";
     src: url("../../assets/KRYLON_030222/Krylon-Regular.otf");
-  }
+  } */

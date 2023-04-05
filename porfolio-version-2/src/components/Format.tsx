@@ -10,7 +10,7 @@ const Format = (props: Props) => {
 
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
       <main className="flex h-screen w-screen flex-col flex-wrap justify-center bg-white">
         <div className="m-5">{children}</div>
       </main>

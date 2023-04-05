@@ -30,7 +30,7 @@ const Home: NextPage = () => {
           </h1>
           <br />
           <br />
-          <h1 className="text-right font-body text-5xl text-charcoal">
+          <h1 className="text-right font-body-regular text-5xl text-charcoal">
             and I'm a software engineer based in Tokyo, Japan.
           </h1>
         </div>

@@ -28,7 +28,7 @@ const Trap = localFont({
     {
       path: "../../assets/TrapFont/OpenType-PS/Trap-Regular.otf",
       weight: "300",
-      style: "regular",
+      style: "normal",
     },
     {
       path: "../../assets/TrapFont/OpenType-PS/Trap-SemiBold.otf",
@@ -55,7 +55,7 @@ import { api } from "~/utils/api";
 import "~/styles/globals.css";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
-  return <main className={`${Trap.variable} ${AmsterdamScript.variable} ${MarseilleRegular.variable} ${NeutralFace} font-sans`}><Component {...pageProps} /></main>
+  return <main className={`${Trap.variable} ${AmsterdamScript.variable} ${MarseilleRegular.variable} ${NeutralFace.variable} ${Krylon.variable} font-sans`}><Component {...pageProps} /></main>
 };
 
 export default api.withTRPC(MyApp);

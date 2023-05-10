@@ -1,8 +1,10 @@
 import { type AppType } from "next/app";
 import localFont from "next/font/local";
 
-const AmsterdamScript = localFont({ src: "../../assets/AmsterdamScript.otf",
-variable: '--font-amsterdam' });
+const AmsterdamScript = localFont({
+  src: "../../assets/AmsterdamScript.otf",
+  variable: "--font-amsterdam",
+});
 const Trap = localFont({
   src: [
     {
@@ -35,19 +37,20 @@ const Trap = localFont({
       weight: "500",
       style: "semibold",
     },
-    
   ],
-  variable: '--font-trap' 
+  variable: "--font-trap",
 });
 const MarseilleRegular = localFont({
   src: "../../assets/marseille-regular.otf",
-  variable: '--font-mariselle',
+  variable: "--font-mariselle",
 });
-const NeutralFace = localFont({ src: "../../assets/NeutralFace.otf",
-variable: '--font-neutralface', });
+const NeutralFace = localFont({
+  src: "../../assets/NeutralFace.otf",
+  variable: "--font-neutralface",
+});
 const Krylon = localFont({
   src: "../../assets/KRYLON_030222/Krylon-Regular.otf",
-  variable: '--font-krylon'
+  variable: "--font-krylon",
 });
 
 import { api } from "~/utils/api";
@@ -55,7 +58,13 @@ import { api } from "~/utils/api";
 import "~/styles/globals.css";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
-  return <main className={`${Trap.variable} ${AmsterdamScript.variable} ${MarseilleRegular.variable} ${NeutralFace.variable} ${Krylon.variable} font-sans`}><Component {...pageProps} /></main>
+  return (
+    <main
+      className={`${Trap.variable} ${AmsterdamScript.variable} ${MarseilleRegular.variable} ${NeutralFace.variable} ${Krylon.variable} font-sans`}
+    >
+      <Component {...pageProps} />
+    </main>
+  );
 };
 
 export default api.withTRPC(MyApp);

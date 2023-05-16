@@ -11,8 +11,8 @@ const Format = (props: Props) => {
   return (
     <>
       <NavBar />
-      <main className="flex h-screen w-screen flex-col flex-wrap justify-center bg-white">
-        <div className="m-5">{children}</div>
+      <main className="h-screen w-screen flex flex-col justify-center items-center bg-neutral2">
+        <div className="m-10">{children}</div>
       </main>
     </>
   );

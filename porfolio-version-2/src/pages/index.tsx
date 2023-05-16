@@ -30,94 +30,92 @@ const Home: NextPage = () => {
         <link rel="icon" href="/dango_icon.svg" />
       </Head>
       <Format>
-       
-        <div className="m-5">
 
-        <svg
-          width="500px"
-          height="500px"
-          viewBox="0 0 65 65"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          role="img"
-          preserveAspectRatio="xMidYMid meet"
-          className="absolute left-0 right-0"
-        >
-          <path
-            d="M50.9 48.6c-.6-.6-1.7-.6-2.3 0c-.6.6-.4 1.7 0 2.3l10.6 10.6c.6.6 1.7.6 2.3 0c.6-.6.6-1.7 0-2.3L50.9 48.6"
-            fill="#f29a2e"
-          ></path>
-          <ellipse
-            transform="rotate(-45.001 46.998 46.997)"
-            cx="47"
-            cy="47"
-            rx="13.6"
-            ry="12"
-            fill="#8cc63e"
-            opacity={0.3}
-          ></ellipse>
-          <path
-            d="M38.3 35.9c-.6-.6-1.7-.6-2.3 0c-.6.6-.6 1.7 0 2.3l3.7 3.7c.6.6 1.7.6 2.3 0c.6-.6.6-1.7 0-2.3l-3.7-3.7"
-            fill="#f29a2e"
-          ></path>
-          <ellipse
-            transform="rotate(-45.001 30.91 30.911)"
-            cx="30.9"
-            cy="30.9"
-            rx="13.6"
-            ry="12"
-            fill="#dae3ea"
-          ></ellipse>
-          <path
-            d="M22.2 19.9c-.6-.6-1.7-.6-2.3 0c-.6.6-.6 1.7 0 2.3l3.7 3.7c.6.6 1.7.6 2.3 0c.6-.6.6-1.7 0-2.3l-3.7-3.7"
-            fill="#f29a2e"
-          ></path>
-          <ellipse
-            transform="rotate(-45.001 14.822 14.824)"
-            cx="14.8"
-            cy="14.8"
-            rx="13.6"
-            ry="12"
-            fill="#ff99ad"
-            opacity={0.3}
-          ></ellipse>
-          <path
-            d="M6.1 3.8c-.6-.6-1.7-.6-2.3 0c-.6.6-.6 1.7 0 2.3l3.7 3.7c.6.6 1.7.6 2.3 0c.6-.6.6-1.7 0-2.3L6.1 3.8"
-            fill="#f29a2e"
-          ></path>
-        </svg>
-          <p className="text-left font-heading text-4xl tracking-wide text-charcoal ">
+          <p className="text-left font-heading pb-5 text-3xl tracking-wide text-charcoal absolute">
             <TypeIt
               options={{
                 // startDelay: 1000,
                 cursor: false,
                 lifeLike: true,
               }}
-              >
+            >
               hello, my name is
             </TypeIt>
           </p>
           <br />
           <br />
           <span className="text-wrapper">
-            <span className="letter text-center font-title2 text-[210px] text-charcoal">
+            <span className="absolute letter text-center font-title2 text-[10rem] text-charcoal z-50 pt-20">
               Kristine
             </span>
+            <svg
+            width="300px"
+            height="300px"
+            viewBox="0 0 65 65"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            preserveAspectRatio="xMidYMid meet"
+            className="relative"
+          >
+            <path
+              d="M50.9 48.6c-.6-.6-1.7-.6-2.3 0c-.6.6-.4 1.7 0 2.3l10.6 10.6c.6.6 1.7.6 2.3 0c.6-.6.6-1.7 0-2.3L50.9 48.6"
+              fill="#f29a2e"
+            ></path>
+            <ellipse
+              transform="rotate(-45.001 46.998 46.997)"
+              cx="47"
+              cy="47"
+              rx="13.6"
+              ry="12"
+              fill="#8cc63e"
+              // opacity={0.3}
+            ></ellipse>
+            <path
+              d="M38.3 35.9c-.6-.6-1.7-.6-2.3 0c-.6.6-.6 1.7 0 2.3l3.7 3.7c.6.6 1.7.6 2.3 0c.6-.6.6-1.7 0-2.3l-3.7-3.7"
+              fill="#f29a2e"
+            ></path>
+            <ellipse
+              transform="rotate(-45.001 30.91 30.911)"
+              cx="30.9"
+              cy="30.9"
+              rx="13.6"
+              ry="12"
+              fill="#dae3ea"
+            ></ellipse>
+            <path
+              d="M22.2 19.9c-.6-.6-1.7-.6-2.3 0c-.6.6-.6 1.7 0 2.3l3.7 3.7c.6.6 1.7.6 2.3 0c.6-.6.6-1.7 0-2.3l-3.7-3.7"
+              fill="#f29a2e"
+            ></path>
+            <ellipse
+              transform="rotate(-45.001 14.822 14.824)"
+              cx="14.8"
+              cy="14.8"
+              rx="13.6"
+              ry="12"
+              fill="#ff99ad"
+              // opacity={0.3}
+            ></ellipse>
+            <path
+              d="M6.1 3.8c-.6-.6-1.7-.6-2.3 0c-.6.6-.6 1.7 0 2.3l3.7 3.7c.6.6 1.7.6 2.3 0c.6-.6.6-1.7 0-2.3L6.1 3.8"
+              fill="#f29a2e"
+            ></path>
+          </svg>
           </span>
           <br />
           <br />
-          <h1 className="font-body-regular text-right text-4xl text-charcoal">
+          <p className="font-body-regular text-right text-3xl text-charcoal">
             <TypeIt
               options={{
                 startDelay: 4000,
                 lifeLike: true,
               }}
-              >
+            >
               and I'm a software engineer based in Tokyo, Japan.
             </TypeIt>
-          </h1>
-        </div>
+          </p>
 
+        <div className="arrow"></div>
       </Format>
     </>
   );

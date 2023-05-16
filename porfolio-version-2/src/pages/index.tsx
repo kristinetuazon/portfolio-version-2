@@ -30,19 +30,21 @@ const Home: NextPage = () => {
         <link rel="icon" href="/dango_icon.svg" />
       </Head>
       <Format>
-        <div className="w-[100%] h-[100%]">
+       
+        <div className="m-5">
+
         <svg
           width="500px"
           height="500px"
-          viewBox="0 0 64 64"
+          viewBox="0 0 65 65"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
           role="img"
           preserveAspectRatio="xMidYMid meet"
-          className="absolute self-center"
+          className="absolute left-0 right-0"
         >
           <path
-            d="M50.9 48.6c-.6-.6-1.7-.6-2.3 0c-.6.6-.6 1.7 0 2.3l10.6 10.6c.6.6 1.7.6 2.3 0c.6-.6.6-1.7 0-2.3L50.9 48.6"
+            d="M50.9 48.6c-.6-.6-1.7-.6-2.3 0c-.6.6-.4 1.7 0 2.3l10.6 10.6c.6.6 1.7.6 2.3 0c.6-.6.6-1.7 0-2.3L50.9 48.6"
             fill="#f29a2e"
           ></path>
           <ellipse
@@ -52,6 +54,7 @@ const Home: NextPage = () => {
             rx="13.6"
             ry="12"
             fill="#8cc63e"
+            opacity={0.3}
           ></ellipse>
           <path
             d="M38.3 35.9c-.6-.6-1.7-.6-2.3 0c-.6.6-.6 1.7 0 2.3l3.7 3.7c.6.6 1.7.6 2.3 0c.6-.6.6-1.7 0-2.3l-3.7-3.7"
@@ -76,14 +79,14 @@ const Home: NextPage = () => {
             rx="13.6"
             ry="12"
             fill="#ff99ad"
+            opacity={0.3}
           ></ellipse>
           <path
             d="M6.1 3.8c-.6-.6-1.7-.6-2.3 0c-.6.6-.6 1.7 0 2.3l3.7 3.7c.6.6 1.7.6 2.3 0c.6-.6.6-1.7 0-2.3L6.1 3.8"
             fill="#f29a2e"
           ></path>
         </svg>
-        <div className="m-5 relative">
-          <p className="text-left font-heading text-4xl tracking-wide text-charcoal">
+          <p className="text-left font-heading text-4xl tracking-wide text-charcoal ">
             <TypeIt
               options={{
                 // startDelay: 1000,
@@ -114,7 +117,7 @@ const Home: NextPage = () => {
             </TypeIt>
           </h1>
         </div>
-              </div>
+
       </Format>
     </>
   );

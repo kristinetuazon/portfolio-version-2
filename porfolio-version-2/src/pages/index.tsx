@@ -3,11 +3,15 @@ import Head from "next/head";
 import Link from "next/link";
 import Format from "~/components/Format";
 import TypeIt from "typeit-react";
-import { api } from "~/utils/api";
 import anime from "animejs";
+import { useEffect, useState } from "react";
+// import {getDatabase} from "../lib/notion"
+
 
 const Home: NextPage = () => {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
+  // const hello = api.example.hello.useQuery({ text: "from tRPC" });
+
+
 
   if (typeof window !== "undefined") {
     anime.timeline().add({
@@ -18,6 +22,10 @@ const Home: NextPage = () => {
       delay: 2500,
     });
   }
+
+// useEffect(()=>{
+//   console.log(getDatabase("59097e004f5541079692da2e9c745d1e"));
+// },[])
 
   return (
     <>
@@ -31,7 +39,7 @@ const Home: NextPage = () => {
       </Head>
       <Format>
 
-          <p className="text-left font-heading pb-5 text-3xl tracking-wide text-charcoal absolute">
+          <p className="text-left font-heading pb-5 text-5xl tracking-wide text-charcoal absolute">
             <TypeIt
               options={{
                 // startDelay: 1000,
@@ -104,7 +112,7 @@ const Home: NextPage = () => {
           </span>
           <br />
           <br />
-          <p className="font-body-regular text-right text-3xl text-charcoal">
+          <p className="font-body font-medium text-right text-3xl text-charcoal">
             <TypeIt
               options={{
                 startDelay: 4000,

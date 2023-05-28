@@ -1,14 +1,22 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {
+  setOpenNav: (state:boolean) => void;
+  openNav: boolean
+};
 
 const NavBar = (props: Props) => {
-  return (
-    <div className="flex justify-between p-5 bg-neutral2">
-        <p className="font-bodySemibold text-lg">KRISTINE CODES</p>
-        <p>kristine.jane.tuazon</p>
-    </div>
-  )
-}
+  const { setOpenNav, openNav } = props;
 
-export default NavBar
+  const handleClick = () => {
+    openNav? setOpenNav(false): setOpenNav(true)
+  };
+
+  return (
+    <div className="flex justify-between bg-neutral2 p-5">
+      <p onClick={handleClick} className="navbar font-body font-medium">{"<> kristine codes </>"}</p>
+    </div>
+  );
+};
+
+export default NavBar;

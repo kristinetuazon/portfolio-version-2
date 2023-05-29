@@ -18,9 +18,9 @@ const Home: NextPage = () => {
     });
   }
 
-  useEffect(() => {
-    console.log(getDatabase("59097e004f5541079692da2e9c745d1e"));
-  });
+  // useEffect(() => {
+  //   console.log(getDatabase());
+  // });
 
   return (
     <>

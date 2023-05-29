@@ -17,10 +17,11 @@ const Format = (props: Props) => {
       {openNav ? (
         <NavBar openNav={openNav} setOpenNav={setOpenNav} />
       ) : (
+      
         <OpenNav openNav={openNav} setOpenNav={setOpenNav} />
       )}
       <main className="flex h-screen w-screen flex-col items-center bg-neutral2">
-        <div className="m-3 mt-16">{children}</div>
+        <div className="m-5 mt-16">{children}</div>
       </main>
     </>
   );

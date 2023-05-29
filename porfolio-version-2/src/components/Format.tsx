@@ -14,13 +14,13 @@ const Format = (props: Props) => {
 
   return (
     <>
+      <main className="flex h-screen w-screen flex-col items-center bg-neutral1">
       {openNav ? (
         <NavBar openNav={openNav} setOpenNav={setOpenNav} />
       ) : (
       
         <OpenNav openNav={openNav} setOpenNav={setOpenNav} />
       )}
-      <main className="flex h-screen w-screen flex-col items-center bg-neutral2">
         <div className="m-5 mt-16">{children}</div>
       </main>
     </>

@@ -5,14 +5,9 @@ import Format from "~/components/Format";
 import TypeIt from "typeit-react";
 import anime from "animejs";
 import { useEffect, useState } from "react";
-// import {getDatabase} from "../lib/notion"
-
+import { getDatabase } from "../lib/notion";
 
 const Home: NextPage = () => {
-  // const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
-
-
   if (typeof window !== "undefined") {
     anime.timeline().add({
       targets: ".letter",
@@ -23,9 +18,9 @@ const Home: NextPage = () => {
     });
   }
 
-// useEffect(()=>{
-//   console.log(getDatabase("59097e004f5541079692da2e9c745d1e"));
-// },[])
+  useEffect(() => {
+    console.log(getDatabase("59097e004f5541079692da2e9c745d1e"));
+  });
 
   return (
     <>
@@ -38,33 +33,32 @@ const Home: NextPage = () => {
         <link rel="icon" href="/dango_icon.svg" />
       </Head>
       <Format>
-
-          <p className="text-left font-heading pb-5 text-5xl tracking-wide text-charcoal absolute">
-            <TypeIt
-              options={{
-                // startDelay: 1000,
-                cursor: false,
-                lifeLike: true,
-              }}
-            >
-              hello, my name is
-            </TypeIt>
-          </p>
-          <br />
-          <br />
-          <span className="text-wrapper">
-            <span className="absolute letter text-center font-title2 text-[10rem] text-charcoal z-50 pt-20">
-              Kristine
-            </span>
-            <svg
-            width="300px"
-            height="300px"
+        <p className="mt-15 absolute pb-5 text-left font-heading text-5xl tracking-wide text-charcoal ">
+          <TypeIt
+            options={{
+              // startDelay: 1000,
+              cursor: false,
+              lifeLike: true,
+            }}
+          >
+            hello, my name is
+          </TypeIt>
+        </p>
+        <br />
+        <br />
+        <span className="text-wrapper">
+          <span className="letter mt-15 absolute z-50 pt-20  text-center font-title2 text-[10rem] text-charcoal ">
+            Kristine
+          </span>
+          <svg
+            // width="300px"
+            // height="100px"
             viewBox="0 0 65 65"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
             role="img"
             preserveAspectRatio="xMidYMid meet"
-            className="relative"
+            className="mt-24 sm:h-[200px] "
           >
             <path
               d="M50.9 48.6c-.6-.6-1.7-.6-2.3 0c-.6.6-.4 1.7 0 2.3l10.6 10.6c.6.6 1.7.6 2.3 0c.6-.6.6-1.7 0-2.3L50.9 48.6"
@@ -77,7 +71,6 @@ const Home: NextPage = () => {
               rx="13.6"
               ry="12"
               fill="#8cc63e"
-              // opacity={0.3}
             ></ellipse>
             <path
               d="M38.3 35.9c-.6-.6-1.7-.6-2.3 0c-.6.6-.6 1.7 0 2.3l3.7 3.7c.6.6 1.7.6 2.3 0c.6-.6.6-1.7 0-2.3l-3.7-3.7"
@@ -109,19 +102,19 @@ const Home: NextPage = () => {
               fill="#f29a2e"
             ></path>
           </svg>
-          </span>
-          <br />
-          <br />
-          <p className="font-body font-medium text-right text-3xl text-charcoal">
-            <TypeIt
-              options={{
-                startDelay: 4000,
-                lifeLike: true,
-              }}
-            >
-              and I'm a software engineer based in Tokyo, Japan.
-            </TypeIt>
-          </p>
+        </span>
+        <br />
+        <br />
+        <p className="text-right font-body text-3xl font-medium  text-charcoal sm:text-xl">
+          <TypeIt
+            options={{
+              startDelay: 4000,
+              lifeLike: true,
+            }}
+          >
+            and I'm a software engineer based in Tokyo, Japan.
+          </TypeIt>
+        </p>
 
         <div className="arrow"></div>
       </Format>
